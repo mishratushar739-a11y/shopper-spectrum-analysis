@@ -1,0 +1,146 @@
+/* ---------------------------------------------------------------------
+   Shopper Spectrum — shared stylesheet
+   Loaded on every page via utils.load_css()
+--------------------------------------------------------------------- */
+
+/* Import a clean web font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---- Sidebar ---------------------------------------------------- */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1F2A44 0%, #16203A 100%);
+}
+section[data-testid="stSidebar"] * {
+    color: #F1F3F9 !important;
+}
+section[data-testid="stSidebar"] .stRadio > label,
+section[data-testid="stSidebar"] label {
+    color: #F1F3F9 !important;
+}
+
+/* ---- Headings ---------------------------------------------------- */
+h1 {
+    font-weight: 700 !important;
+    color: #1F2A44;
+}
+h2, h3 {
+    font-weight: 600 !important;
+    color: #2C3A5C;
+}
+
+/* ---- Buttons ------------------------------------------------------ */
+.stButton > button {
+    background: linear-gradient(90deg, #4C72B0 0%, #6C8FD1 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.stButton > button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(76, 114, 176, 0.35);
+    color: white;
+}
+
+/* ---- Hero / header banner ---------------------------------------- */
+.hero-banner {
+    background: linear-gradient(120deg, #4C72B0 0%, #8172B2 100%);
+    padding: 2.2rem 2rem;
+    border-radius: 16px;
+    color: white;
+    margin-bottom: 1.6rem;
+}
+.hero-banner h1 {
+    color: white !important;
+    margin-bottom: 0.3rem;
+}
+.hero-banner p {
+    color: #EAEDF7;
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+/* ---- Feature / nav cards on Home ---------------------------------- */
+.feature-card {
+    background: #F7F8FC;
+    border: 1px solid #E4E7F1;
+    border-radius: 14px;
+    padding: 1.4rem 1.5rem;
+    height: 100%;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.feature-card:hover {
+    box-shadow: 0 8px 20px rgba(31, 42, 68, 0.08);
+    transform: translateY(-2px);
+}
+.feature-card h3 {
+    margin-top: 0;
+}
+
+/* ---- Segment result badge ----------------------------------------- */
+.segment-badge {
+    display: inline-block;
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+    margin-top: 6px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* ---- Product recommendation list ----------------------------------- */
+.rec-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.6rem;
+}
+.rec-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #F7F8FC;
+    border: 1px solid #E4E7F1;
+    border-left: 5px solid #4C72B0;
+    border-radius: 10px;
+    padding: 12px 18px;
+    margin-bottom: 10px;
+}
+.rec-rank {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #4C72B0;
+    min-width: 28px;
+}
+.rec-name {
+    font-weight: 600;
+    color: #232B3E;
+    flex-grow: 1;
+}
+.rec-score {
+    font-size: 0.85rem;
+    color: #6B7280;
+    white-space: nowrap;
+}
+
+/* ---- Metric cards ---------------------------------------------------- */
+div[data-testid="stMetric"] {
+    background-color: #F7F8FC;
+    border: 1px solid #E4E7F1;
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+}
+
+/* ---- General polish -------------------------------------------------- */
+.block-container {
+    padding-top: 2rem;
+}
+hr {
+    margin: 1.4rem 0;
+}
